@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
+    <script defer src="profile.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <h2><i class="fa-solid fa-user"></i> Thông tin cá nhân</h2>
+
+        <div class="profile-section">
+            <label>Hình ảnh hồ sơ</label>
+            <img id="profileImage" src="https://via.placeholder.com/100x100?text=AVart&align=middle,center" 
+                style="width: 100px; height: 100px; text-align: center; border-radius: 50%; object-fit: cover; border: 2px solid #100202;">
+
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <br>
+            <button id="changeImageBtn" style="margin-top: 10px;"><i class="fa-solid fa-camera"></i> Thay đổi hình
+                ảnh</button>
+        </div>
+
+        <div class="profile-section">
+            <label>Họ tên</label>
+            <input type="text" id="profileName" disabled>
+        </div>
+
+        <div class="profile-section">
+            <label>Số điện thoại</label>
+            <input type="text" id="profilePhone">
+        </div>
+
+        <div class="profile-section">
+            <label>Địa chỉ</label>
+            <input type="text" id="profileAddress" placeholder="Nhập địa chỉ của bạn...">
+        </div>
+
+        <div class="balance">💰 Số dư: <span id="accountBalance">0</span> VND</div>
+
+        <div class="actions">
+            <button id="depositBtn"><i class="fa-solid fa-coins"></i> Nạp tiền</button>
+            <button id="saveBtn"><i class="fa-solid fa-floppy-disk"></i> Lưu</button>
+            <button id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</button>
+        </div>
+
+        <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Quay lại trang chủ</a>
+    </div>
+
+</body>
+
+</html>

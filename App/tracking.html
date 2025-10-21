@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo dõi đơn hàng - THẾ GIỚI GIÀY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css"> <!-- Sử dụng style.css gốc -->
+    <script defer src="main.js"></script> <!-- Sử dụng main.js gốc -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="index.html" class="logo">THẾ GIỚI GIÀY. </a> <!-- Link về trang chính -->
+
+            <ul class="navlist flex gap-3">
+                <li>
+                    <a href="index.html">Trang chủ</a> <!-- Link về trang chính -->
+                </li>
+                <li>
+                    <a href="#">Trang sản phẩm</a>
+                </li>
+                <li>
+                    <a href="contact.html">Trang liên hệ</a>
+                </li>
+                <li>
+                    <a href="profile.html">Trang thông tin cá nhân</a>
+                </li>
+            </ul>
+
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="#" id="loginBtn" class="btn login-trigger">
+                    Đăng nhập
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <ul class="mobile-menu">
+                <li>
+                    <a href="index.html">Trang chủ</a> <!-- Link về trang chính -->
+                </li>
+                <li>
+                    <a href="#">Trang sản phẩm</a>
+                </li>
+                <li>
+                    <a href="contact.html">Trang liên hệ</a>
+                </li>
+                <li>
+                    <a href="profile.html">Trang thông tin cá nhân</a>
+                </li>
+                <li>
+                    <a href="#" id="mobileLoginBtn" class="btn login-trigger">
+                        Đăng nhập
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper p-top">
+                <div class="text-center content">
+                    <h5>Theo dõi đơn hàng</h5>
+                    <h2 class="pad">Kiểm tra trạng thái giao hàng của bạn</h2>  
+                </div>   
+                    <p class="para1">
+                        Nhập mã đơn hàng hoặc số điện thoại đã đăng ký để theo dõi tiến trình vận chuyển:
+                    </p>
+                
+
+                <!-- Form nhập thông tin theo dõi -->
+                <div class="tracking-form-container text-center mt-4" style="display: flex; justify-content: center; align-items: center;">
+                    <form id="trackingForm" class="flex gap-2 center">
+                        <input type="text" id="trackingCode" placeholder="Nhập mã đơn hàng (ví dụ: ORD123456)" required>
+                        <input type="tel" id="trackingPhone" placeholder="Hoặc nhập số điện thoại (ví dụ: 0123456789)">
+                        <button type="submit" class="btn">Theo dõi</button>
+                    </form>
+                </div>
+
+                <!-- Phần hiển thị kết quả theo dõi (ẩn ban đầu, hiển thị sau khi submit) -->
+                <div id="trackingResult" class="tracking-result mt-4" style="display: none;">
+                    <h3 class="text-center">Kết quả theo dõi</h3>
+                    <div id="ordersList">
+                        <!-- Orders sẽ render động từ JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="flex wrapper gap-4">
+            <div class="footer-wrapper">
+                <h3 class="logo-two">THẾ GIỚI GIÀY.</h3>
+                <p class="white">
+                    Chúng tôi cam kết mang đến cho bạn hành trình mua sắm giày dép đẳng cấp
+                    và tuyệt vời nhất – nơi từng đôi giày không chỉ là phụ kiện, mà còn là sự
+                    kết hợp hoàn hảo giữa phong cách, chất lượng và sự thoải mái.
+                </p>
+                <div class="flex gap-2 mt-4">
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-wrapper">
+                <h4>Mẫu giày</h4>
+                <ul>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Phá cách</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Thời thượng</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Thoải mái</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-wrapper">
+                <h4>Cung cấp</h4>
+                <ul>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Tầm nhìn chung</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Hợp tác</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Kể thêm về chúng tôi</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-wrapper">
+                <h4>Ủng hộ</h4>
+                <ul>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Tài khoản</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Trung tâm hỗ trợ</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Đánh giá</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Danh bạ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Đăng nhập/Đăng ký (từ gốc, để login nếu cần) -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Đăng nhập</h2>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="login">Đăng nhập</button>
+                    <button class="tab-btn" data-tab="signup">Đăng ký</button>
+                </div>
+            </div>
+
+            <div class="form-scroll">
+                <!-- Form Đăng nhập -->
+                <div id="loginTab" class="tab-content active">
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="loginPhone">Số điện thoại:</label>
+                            <input type="tel" id="loginPhone" name="phone"
+                                placeholder="Nhập số điện thoại (ví dụ: 0123456789)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Mật khẩu:</label>
+                            <input type="password" id="loginPassword" name="password" placeholder="Nhập mật khẩu"
+                                required>
+                        </div>
+                        <button type="submit" class="btn full-width">Đăng nhập</button>
+                        <p class="forgot-password"><a href="#">Quên mật khẩu?</a></p>
+                    </form>
+                </div>
+
+                <!-- Form Đăng ký -->
+                <div id="signupTab" class="tab-content">
+                    <form id="signupForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="signupName">Họ và tên:</label>
+                            <input type="text" id="signupName" name="name" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPhone">Số điện thoại:</label>
+                            <input type="tel" id="signupPhone" name="phone"
+                                placeholder="Nhập số điện thoại (ví dụ: 0123456789)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Mật khẩu:</label>
+                            <input type="password" id="signupPassword" name="password"
+                                placeholder="Nhập mật khẩu (ít nhất 6 ký tự)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupConfirmPassword">Xác nhận mật khẩu:</label>
+                            <input type="password" id="signupConfirmPassword" name="confirmPassword"
+                                placeholder="Xác nhận mật khẩu" required>
+                        </div>
+
+                        <!-- Captcha ngẫu nhiên -->
+                        <div class="form-group captcha-group">
+                            <label for="captchaAnswer">Xác thực (Captcha):</label>
+                            <div id="captchaQuestion" class="captcha-question"></div>
+                            <input type="number" id="captchaAnswer" name="captchaAnswer"
+                                placeholder="Nhập kết quả (ví dụ: 5)" required>
+                            <small class="captcha-note">Vui lòng tính tổng hai số để xác thực.</small>
+                        </div>
+
+                        <button type="submit" class="btn full-width">Đăng ký</button>
+                        <p class="terms">Bằng cách đăng ký, bạn đồng ý với <a href="#">Điều khoản dịch vụ</a> của chúng
+                            tôi.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Toggle (từ gốc, để đồng bộ) -->
+    <div id="chatToggle" class="chat-toggle">
+        <i class="fa-solid fa-comments"></i>
+    </div>
+
+    <!-- Chat Window (từ gốc) -->
+    <div id="chatWindow" class="chat-window">
+        <div class="chat-header">
+            <span>Chat với chúng tôi</span>
+            <button class="chat-close">&times;</button>
+        </div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Nhập tin nhắn...">
+            <button id="sendMessage"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Floating Tracking Icon (từ yêu cầu trước) -->
+    <div class="floating-tracking-icon">
+        <a href="tracking.html" title="Theo dõi đơn hàng">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+    </div>
+
+    <!-- Script riêng cho tracking -->
+    <script src="tracking.js"></script>
+</body>
+
+</html>

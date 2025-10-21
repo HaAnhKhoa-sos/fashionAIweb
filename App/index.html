@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THẾ GIỚI GIÀY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">THẾ GIỚI GIÀY. </a>
+
+            <ul class="navlist flex gap-3">
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Trang sản phẩm</a>
+                </li>
+                <li>
+                    <a href="contact.html">Trang liên hệ</a>
+                </li>
+                <li>
+                    <a href="profile.html">Trang thông tin cá nhân</a>
+                </li>
+            </ul>
+
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-notdog fa-solid fa-cart-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <!-- Desktop nút -->
+                <a href="#" id="loginBtn" class="btn login-trigger"> <!-- Thêm class="login-trigger" -->
+                    Đăng nhập
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+
+
+
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <!-- Moblie menu -->
+            <ul class="mobile-menu">
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Trang sản phẩm</a>
+                </li>
+                <li>
+                    <a href="contact.html">Trang liên hệ</a>
+                </li>
+                <li>
+                    <a href="profile.html">Trang thông tin cá nhân</a>
+                </li>
+                <!-- Mobile nút (trong .mobile-menu) -->
+                <li>
+                    <a href="#" id="mobileLoginBtn" class="btn login-trigger"> <!-- Thêm class="login-trigger" -->
+                        Đăng nhập
+                        &nbsp;
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero-section flex wrapper gap-4">
+                <div class="content">
+                    <h1>Bước Chân Phong Cách Trên Từng <br>
+                        <span>Đôi Giày</span>
+                    </h1>
+
+                    <p class="para">
+                        Khám phá bộ sưu tập giày thể thao cao cấp sành điệu của chúng tôi,
+                        với những đôi sneaker mang phong cách đường phố năng động hoặc dễ thương tinh tế.
+                        Mỗi đôi giày đều được thiết kế để mang lại sự thoải mái và phong cách cho bạn trong mọi dịp.
+
+
+                    </p>
+                    <div class=" flex gap-2">
+                        <a href="#" id="order-btn" class="btn">Đặt hàng</a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="images/poster.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper p-top">
+                <div class="text-center content">
+                    <h5> Mua hàng ưu đãi</h5>
+                    <h2 class="pad"> Trải nghiệm dịch vụ mua sắm </h2>
+                </div>
+
+
+                <div class="flex mt-4 gap-4 text-center">
+                    <div class="service-card">
+                        <div class="image-container">
+                            <img src="images/oder.png">
+                        </div>
+                        <h3> Dễ Dàng Mua Hàng </h3>
+                        <p> Chỉ với một cú nhấp chuột đơn giản</p>
+                    </div>
+
+                    <div class="service-card center">
+                        <div class="image-container">
+                            <img src="images/delivery.png">
+                        </div>
+                        <h3> Giao Hàng Nhanh Chóng </h3>
+                        <p> Không thể để bạn chờ lâu</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="image-container">
+                            <img src="images/seller.png">
+                        </div>
+                        <h3> Cửa Hàng Được Ưa Chuộng</h3>
+                        <p> Khiến bạn không thể rời mắt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products-section">
+            <div class="wrapper p-top">
+                <div class="text-center content">
+                    <h5> Sản phẩm nổi bật</h5>
+                    <h2 class="pad"> Khám phá các sản phẩm của chúng tôi </h2>
+                </div>
+
+                <div class="cart-list text-center flex mt-4 gap-2">
+                    <!-- <div class="list">
+                    <div class="image-container">
+                        <img src="list/1.jpg">
+                    </div>
+                    <h4>Giày Thời Trang Panda</h4>
+                    <h4 class="price">100 VND</h4>
+                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                    </div>  -->
+                </div>
+
+                <div class="cart-tab">
+                    <h3> Giỏ Hàng Của Bạn </h3>
+
+                    <div class="card-list">
+                        <!-- Sản phẩm -->
+                    </div>
+                    <div class="total-container">
+                        <h4>Tổng tiền:</h4>
+                        <h4 class="cart-total">0 VND</h4>
+                    </div>
+
+                    <div class="btn-container flex gap-2">
+                        <a href="#" class="btn close-btn">Đóng</a>
+                        <a href="#" class="btn checkout-trigger">Kiểm tra giỏ hàng</a>
+                    </div>
+
+                </div>
+                <!-- Checkout Tab (Sidebar thanh toán - slide từ phải, fixed position) -->
+                <div class="checkout-tab">
+                    <h3>Thanh Toán Hóa Đơn</h3>
+
+                    <!-- Div header với icon + tab address chồng lên -->
+                    <div class="checkout-header">
+                        <div class="header-top flex center gap-2">
+                            <i class="fa-solid fa-credit-card"
+                                style="font-size: 2rem; color: var(--gold-finger); flex-shrink: 0;"></i>
+                            <!-- Tab chồng lên cho address (click để mở rộng edit inline) -->
+                            <div class="address-tab" id="address-tab">
+                                <div class="address-display" id="address-display">
+                                    <!-- Nội dung load động: "Giao đến: [address]" hoặc warning -->
+                                </div>
+                                <!-- Inline edit form (ẩn ban đầu, slide-up khi active) -->
+                                <div class="address-edit-form" id="address-edit-form" style="display: none;">
+                                    <textarea id="addressInput"
+                                        placeholder="Nhập địa chỉ đầy đủ (số nhà, đường, quận, thành phố)..."></textarea>
+                                    <div class="edit-buttons flex gap-1 center">
+                                        <button id="saveAddressBtn" class="btn small-btn">Lưu</button>
+                                        <button id="cancelAddressEdit" class="btn small-btn secondary">Hủy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="text-align: center; color: gray; font-style: italic; margin: 0;">Xác nhận đơn hàng của
+                            bạn</p>
+                    </div>
+
+
+
+                    <!-- Div danh sách mua hàng (scrollable, render từ JS) -->
+                    <div class="checkout-items-list">
+                        <!-- Items render động -->
+                    </div>
+
+                    <!-- Div tổng số tiền -->
+                    <div class="checkout-total">
+                        <h4>Tổng tiền hàng: <span class="total-amount">0 VND</span></h4>
+                        <h4>Phí shipping: <span id="shipping-fee">0 VND</span></h4>
+                        <h4 class="grand-total">Tổng thanh toán: <strong>0 VND</strong></h4>
+                    </div>
+
+                    <!-- Div phương thức thanh toán (2 radio) -->
+                    <div class="payment-methods">
+                        <h4>Chọn phương thức giao hàng:</h4>
+                        <label class="payment-option">
+                            <input type="radio" name="shipping" value="express" checked> Hỏa tốc (1-2 ngày, phí +20%)
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="shipping" value="standard"> Bình thường (3-5 ngày, phí +10%)
+                        </label>
+                    </div>
+
+                    <!-- Nút thanh toán -->
+                    <div class="checkout-buttons">
+                        <a href="#" class="btn close-checkout">Hủy</a>
+                        <button class="btn checkout-btn" id="payBill">Thanh toán hóa đơn</button>
+                    </div>
+                </div>
+                <!-- Tiếp tục các section khác... -->
+
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper p-top flex gap-4">
+                <div class="image-container">
+                    <img src="images/review.jpg">
+                </div>
+
+                <div class="review-container">
+                    <h5> Đánh giá từ khách hàng</h5>
+                    <h2 class="pad"> Khách hàng nói gì về chúng tôi </h2>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="flex gap-2">
+                                    <div class="profile">
+                                        <img src="client/reviewer 1.jpg" alt="Khách hàng">
+                                    </div>
+                                    <div>
+                                        <h4>Khách hàng đầu tiên</h4>
+                                        <div class="mt-half">
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="para">
+                                    Dịch vụ bán giày khá là chu đáo. Ban đầu, tôi chỉ ghé đến
+                                    cửa hàng để coi thử những mẫu giày hút mắt trong lần khai
+                                    trương của họ. Giá cả trong ổn với thị trường và phong
+                                    cách giày của họ mang tính thời trang khá cao. Tôi đã
+                                    nhắn hỏi dò thử chứ không có ý định mua, nhưng họ đã
+                                    rất nhiệt tình, kiên nhẫn.Vì thế tôi đã đặt hàng, hàng
+                                    hóa giao về rất nhanh và chỉnh chu. Tôi hoàn toàn hài
+                                    lòng khi đến với cửa hàng này.
+                                </p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex gap-2">
+                                    <div class="profile">
+                                        <img src="client/reviewer 2.jpg" alt="Khách hàng">
+                                    </div>
+                                    <div>
+                                        <h4>Khách Vip</h4>
+                                        <div class="mt-half">
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            <i class="fa-solid fa-star" style="color: gray;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="para">
+                                    Giá cả phải nói là trông rẻ với tôi, những mẫu thời
+                                    trang giày của cửa hàng cũng chạy theo xu hướng mới
+                                    mẻ năng động. Tôi thích mẫu giày trong cửa hàng này!
+                                </p>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex gap-2">
+                                    <div class="profile">
+                                        <img src="client/reviewer 3.jpg" alt="Khách hàng">
+                                    </div>
+                                    <div>
+                                        <h4>Khách ruột</h4>
+                                        <div class="mt-half">
+                                            <div class="mt-half">
+                                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="para">
+                                    Giày ở cửa hàng này tôi mua quen rồi. Nó khá
+                                    thoải mái còn ưa nhìn, giá cả còn phải chăng
+                                    với bóp tiền của sinh viên. 5 sao không cần
+                                    nói nhiều.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="flex between">
+                            <a href="#" class="arrow" id="prev"> <!-- Đổi ID và icon: left cho prev -->
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <a href="#" class="arrow" id="next"> <!-- Đổi ID và icon: right cho next -->
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thêm vào index.html, ngay sau section review -->
+        <section id="comments-section">
+            <div class="wrapper p-top">
+                <div class="text-center content">
+                    <h5>Ý kiến của bạn</h5>
+                    <h2 class="pad">Viết Bình Luận Của Bạn</h2>
+                    <p class="pad mt-half">Chia sẻ trải nghiệm mua sắm giày của bạn với chúng tôi!</p>
+                </div>
+
+                <!-- Form viết bình luận -->
+                <div class="comment-form-container">
+                    <form id="commentForm" class="comment-form">
+                        <div class="form-group">
+                            <label for="commentName">Họ và tên:</label>
+                            <input type="text" id="commentName" name="name" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentEmail">Email:</label>
+                            <input type="email" id="commentEmail" name="email" placeholder="Nhập email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentText">Bình luận:</label>
+                            <textarea id="commentText" name="comment"
+                                placeholder="Viết bình luận của bạn (tối thiểu 10 ký tự)" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Gửi Bình Luận</button>
+                    </form>
+                </div>
+
+                <!-- Danh sách bình luận -->
+                <div class="comments-list" id="commentsList">
+                    <!-- Bình luận sẽ được render động từ JS -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper p-top">
+                <div class="app-container flex between">
+                    <div class="app-image">
+                        <img src="images/Appp.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h5> Tải ứng dụng của chúng tôi</h5>
+                        <h2 class="pad"> Ứng dụng di động cho tất cả các nền tảng </h2>
+                        <p class="para">
+                            Tải ứng dụng của chúng tôi để trải nghiệm mua sắm tiện lợi và nhanh chóng trên điện thoại di
+                            động của bạn. Với giao diện thân thiện và dễ sử dụng, bạn có thể duyệt qua hàng ngàn sản
+                            phẩm,
+                            nhận thông báo về các ưu đãi đặc biệt, và quản lý đơn hàng của mình mọi lúc, mọi nơi.
+                        </p>
+                        <div class="flex gap-2 image-container">
+                            <a href="#" class="btn bt flex gap-2 text-center">
+                                <i class="fa-brands fa-apple"></i>
+                                <div>
+                                    <small>Tải xuống từ</small>
+                                    <h4>App Store</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-container">
+        <div class="flex wrapper gap-4">
+            <div class="footer-wrapper">
+                <h3 class="logo-two">THẾ GIỚI GIÀY.</h3>
+                <p class="white">
+                    Chúng tôi cam kết mang đến cho bạn hành trình mua sắm giày dép đẳng cấp
+                    và tuyệt vời nhất – nơi từng đôi giày không chỉ là phụ kiện, mà còn là sự
+                    kết hợp hoàn hảo giữa phong cách, chất lượng và sự thoải mái.
+                </p>
+                <div class="flex gap-2 mt-4">
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-wrapper">
+                <h4>Mẫu giày</h4>
+                <ul>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Phá cách</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Thời thượng</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Thoải mái</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-wrapper">
+                <h4>Cung cấp</h4>
+                <ul>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Tầm nhìn chung</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Hợp tác</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Kể thêm về chúng tôi</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-wrapper">
+                <h4>Ủng hộ</h4>
+                <ul>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Tài khoản</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Trung tâm hỗ trợ</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Đánh giá</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Danh bạ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Modal Đăng nhập/Đăng ký -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">Đăng nhập</h2>
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="login">Đăng nhập</button>
+                    <button class="tab-btn" data-tab="signup">Đăng ký</button>
+                </div>
+            </div>
+
+            <div class="form-scroll">
+                <!-- Form Đăng nhập -->
+                <div id="loginTab" class="tab-content active">
+                    <form id="loginForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="loginPhone">Số điện thoại:</label>
+                            <input type="tel" id="loginPhone" name="phone"
+                                placeholder="Nhập số điện thoại (ví dụ: 0123456789)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Mật khẩu:</label>
+                            <input type="password" id="loginPassword" name="password" placeholder="Nhập mật khẩu"
+                                required>
+                        </div>
+                        <button type="submit" class="btn full-width">Đăng nhập</button>
+                        <p class="forgot-password"><a href="#">Quên mật khẩu?</a></p>
+                    </form>
+                </div>
+
+                <!-- Form Đăng ký -->
+                <div id="signupTab" class="tab-content">
+                    <form id="signupForm" class="auth-form">
+                        <div class="form-group">
+                            <label for="signupName">Họ và tên:</label>
+                            <input type="text" id="signupName" name="name" placeholder="Nhập họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPhone">Số điện thoại:</label>
+                            <input type="tel" id="signupPhone" name="phone"
+                                placeholder="Nhập số điện thoại (ví dụ: 0123456789)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Mật khẩu:</label>
+                            <input type="password" id="signupPassword" name="password"
+                                placeholder="Nhập mật khẩu (ít nhất 6 ký tự)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupConfirmPassword">Xác nhận mật khẩu:</label>
+                            <input type="password" id="signupConfirmPassword" name="confirmPassword"
+                                placeholder="Xác nhận mật khẩu" required>
+                        </div>
+
+                        <!-- Captcha ngẫu nhiên -->
+                        <div class="form-group captcha-group">
+                            <label for="captchaAnswer">Xác thực (Captcha):</label>
+                            <div id="captchaQuestion" class="captcha-question"></div>
+                            <input type="number" id="captchaAnswer" name="captchaAnswer"
+                                placeholder="Nhập kết quả (ví dụ: 5)" required>
+                            <small class="captcha-note">Vui lòng tính tổng hai số để xác thực.</small>
+                        </div>
+
+                        <button type="submit" class="btn full-width">Đăng ký</button>
+                        <p class="terms">Bằng cách đăng ký, bạn đồng ý với <a href="#">Điều khoản dịch vụ</a> của chúng
+                            tôi.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="floating-tracking-icon">
+        <a href="tracking.html" title="Theo dõi đơn hàng">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+    </div>
+</body>
+
+</html>

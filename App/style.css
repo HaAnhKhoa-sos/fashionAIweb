@@ -1,0 +1,2716 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --lead: #383933;
+    --gold-finger: #f34f0e;
+    --eye-ball: #b9efeb;
+    --hint-yellow: #d4c8c8;
+    --pure-white: #FFF;
+    --yellow: #f1f983;
+}
+
+body {
+    background: var(--eye-ball);
+}
+
+a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-4 {
+    gap: 6rem;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 25px;
+    border-radius: 4rem;
+    display: block;
+}
+
+.content h2 {
+    padding-top: 1rem;
+}
+
+.p-top {
+    padding-top: 10rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 3rem;
+}
+
+.mt-half {
+    margin-top: 0.5rem;
+}
+
+.navbar {
+    min-height: 14vh;
+}
+
+.logo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+.logo-two {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.white {
+    max-width: 500px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .9rem 2rem;
+    background: var(--gold-finger);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color: var(--pure-white);
+    box-shadow: #07060448 0 3px 1px;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--lead);
+    transform: scale(0.98);
+}
+
+.bt {
+    display: inline-block;
+    padding: .2rem 5rem;
+    background: var(--gold-finger);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color: var(--pure-white);
+    box-shadow: #07060448 0 3px 1px;
+    transition: .3s ease-in-out;
+}
+
+.bt:hover {
+    background: var(--lead);
+}
+
+.bt:hover h4 {
+    color: white;
+}
+
+.cart-icon {
+    color: var(--lead);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.cart-icon .cart-value {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: .85rem;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gold-finger);
+    color: var(--lead);
+    text-align: center;
+    line-height: 20px;
+}
+
+.desktop-action .hamburger {
+    font-size: 1.5rem;
+    display: none;
+}
+
+.hero-section {
+    min-height: calc(100vh - 14vh);
+}
+
+.content,
+.image-container,
+.service-card {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5.6vw;
+    color: var(--lead);
+}
+
+h1 span {
+    color: var(--gold-finger);
+}
+
+p {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+.para {
+    margin-block: 2rem;
+    max-width: 610px;
+    line-height: 38px;
+}
+
+.para1 {
+    margin-block: 2rem;
+    max-width: 700px;
+    line-height: 38px;
+}
+
+
+.paa {
+    margin-block: 2rem;
+    margin-top: 2rem;
+    max-width: 900px;
+    line-height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.social-icon {
+    background: var(--hint-yellow);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+    transition: .3s ease-in-out;
+}
+
+.social-icon:hover {
+    background: var(--lead);
+    color: var(--pure-white);
+}
+
+h5 {
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    color: var(--gold-finger);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.7rem;
+    text-transform: capitalize;
+    color: var(--lead);
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--lead);
+}
+
+.service-card h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* .cart-list: NHƯ OLD CSS - ĐƠN GIẢN, UNIFORM, KHÔNG DUPLICATE/SHIFT */
+.cart-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Căn giữa như old */
+    align-items: flex-start;
+    /* Align top để card đều height */
+    gap: 2rem;
+    /* Gap fixed như old */
+    margin-top: 2rem;
+    /* Margin top như old */
+    width: 100%;
+    /* Full width như old */
+}
+
+/* .list: NHƯ OLD CSS - Fixed 300px width, min-height 400px, uniform */
+.list {
+    flex: 0 0 300px;
+    /* Width fixed 300px như old, không co giãn */
+    min-height: 400px;
+    /* Height min fixed như old, card đều */
+    padding: 1.5rem;
+    background: var(--pure-white);
+    border: 0.2rem solid var(--gold-finger);
+    border-radius: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px, rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Nội dung đều như old */
+}
+
+.list:hover {
+    transform: translateY(-5px);
+}
+
+.list .image-container {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.list .image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2rem;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0 10px 10px);
+    margin: 0;
+}
+
+.list h4 {
+    font-size: 1.5rem;
+    color: var(--lead);
+    margin: 0.5rem 0;
+    flex-grow: 1;
+    /* Text lấp space, giữ height đều */
+}
+
+.list .price {
+    font-size: 1.7rem;
+    color: var(--gold-finger);
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.list .btn {
+    margin-top: auto;
+    padding: 0.8rem 1.5rem;
+    width: auto;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: var(--lead);
+}
+
+.pp {
+    margin-left: 6.2rem;
+}
+
+.ppp {
+    margin-left: 5.9rem;
+}
+
+.p-p {
+    margin-top: 3rem;
+}
+
+.pppp {
+    padding: 0 2.3rem 0 0;
+}
+
+/* Cart Overlay (giữ nguyên, không ảnh hưởng .cart-list) */
+.cart-overlay {
+    position: fixed;
+    background: rgba(13, 53, 64, 0.407);
+    /* ← Nền mờ xám (semi-transparent) */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.cart-overlay.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+/* Tự active overlay khi cart mở (giữ nguyên) */
+body:has(.cart-tab.cart-tab-active) .cart-overlay {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    cursor: pointer;
+    z-index: 99;
+    /* Thấp hơn cart (100), chỉ che nền trang */
+
+}
+
+body:has(.checkout-tab-active) .cart-tab {
+    /* Nếu muốn cart hoàn toàn không tương tác khi bị overlay che */
+    pointer-events: none;
+    /* Tắt click vào cart */
+    opacity: 0.5;
+    /* Làm mờ cart để rõ ràng hơn (tùy chọn) */
+    transition: opacity 0.3s ease;
+    /* Mượt mà */
+}
+
+/* Khôi phục cart khi checkout đóng (nếu cần, dùng JS để remove class hoặc :not) */
+body:not(:has(.checkout-tab-active)) .cart-tab {
+    pointer-events: auto;
+    /* Bật lại tương tác */
+    opacity: 1;
+}
+
+body:has(.checkout-tab-active) .cart-overlay {
+    z-index: 102 !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: none;
+    cursor: default;
+    /* Không pointer nữa, vì không click được */
+}
+
+body:has(.checkout-tab-active):not(:has(.cart-tab-active)) .cart-overlay {
+    /* Nếu cart đóng, overlay off */
+    z-index: 102 !important;
+    /* Vẫn 102, nhưng không có cart để che */
+
+}
+
+
+/* .cart-tab & .card-list (giữ nguyên, tách rõ với .cart-list sản phẩm) */
+.cart-tab {
+    background: var(--eye-ball);
+    position: fixed;
+    top: 0;
+    right: -500px;
+    bottom: 0;
+    left: auto;
+    width: 25rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.1) -10px 0 20px;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.cart-tab-active {
+    right: 0;
+}
+
+.cart-tab h3 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    color: rgb(6, 5, 5);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.cart-tab .card-list {
+    background: rgba(251, 251, 251, 0.151);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0;
+    width: 100%;
+    overflow-y: auto;
+    max-height: none;
+    padding-right: 0.4rem;
+}
+
+.cart-tab .card-list::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.cart-tab .card-list::-webkit-scrollbar-thumb {
+    background: #030303;
+    border-radius: 1rem;
+}
+
+.cart-tab .card-list:empty::before {
+    content: "Giỏ hàng trống. Hãy thêm sản phẩm từ trang chủ!";
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    color: gray;
+    font-style: italic;
+}
+
+.cart-tab .total-container {
+    width: 100%;
+    background: rgb(208, 74, 7);
+    color: white;
+    text-align: center;
+    margin: 1rem 0 0 0.2rem;
+    padding: 1rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+}
+
+.cart-tab .total-container h4 {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0 0.5rem;
+    color: white;
+}
+
+.cart-tab .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 2rem 0.2rem;
+    flex-shrink: 0;
+}
+
+.cart-tab .item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #e0f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* Fix lỗi cú pháp */
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.cart-tab .item.slide-out {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.cart-tab .item:hover {
+    background: #edf0c9;
+}
+
+.cart-tab .item:nth-child(even):hover {
+    background: #f7fbca;
+}
+
+.cart-tab .item:nth-child(even) {
+    background: #e3f2fd;
+    border: 1px solid #f5f5f5;
+}
+
+.cart-tab .item .detail {
+    flex: 2;
+}
+
+.cart-tab .item .item-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.cart-tab .item h4 {
+    font-size: 1.2rem;
+    color: #333333;
+    margin: 0;
+}
+
+.cart-tab .item .item-total {
+    font-weight: bold;
+    color: #d32f2f;
+    margin: 0.2rem 0 0 0;
+}
+
+.cart-tab .quantity-btn {
+    background: #d32c03;
+    color: var(--pure-white);
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cart-tab .quantity-btn:hover {
+    background: #000000;
+}
+
+.cart-tab .quantity-value {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0.5rem;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+/* Checkout Tab (Sidebar thanh toán - fixed slide từ phải, full thiết kế cho HTML trên) */
+.checkout-tab {
+    background: var(--pure-white);
+    /* Nền trắng sạch sẽ cho thanh toán */
+    position: fixed;
+    /* Fixed toàn màn hình, không scroll theo trang */
+    top: 0;
+    right: -600px;
+    /* Ẩn bên phải ban đầu (width 30rem + padding) */
+    bottom: 0;
+    left: auto;
+    width: 30rem;
+    /* Rộng vừa phải để fit items-list + methods */
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* Xếp dọc: header > list > total > methods > buttons */
+    justify-content: flex-start;
+    /* Bắt đầu từ top */
+    align-items: stretch;
+    /* Nội dung full width */
+    z-index: 101;
+    /* Cao hơn cart-tab (100) để overlay */
+    box-shadow: rgba(0, 0, 0, 0.1) -10px 0 20px;
+    /* Bóng trái để nổi bật */
+    transition: right 0.3s ease;
+    /* Slide mượt từ phải */
+    overflow-y: auto;
+    /* Scroll toàn tab nếu quá dài */
+    height: 100vh;
+    /* Full height viewport */
+    border-left: 1px solid #ddd;
+    /* Đường viền trái phân cách với cart */
+    /* Thêm: Bọc scrollview cho toàn bộ tab bằng cách đảm bảo flex và overflow hoạt động tốt */
+    max-height: 100vh;
+    /* Giới hạn max để tránh overflow ngoài viewport */
+    scrollbar-width: thin;
+    /* Scrollbar mỏng cho Firefox */
+    scrollbar-color: var(--gold-finger) transparent;
+    /* Màu scrollbar theo theme */
+}
+
+.checkout-tab::-webkit-scrollbar {
+    width: 0.4rem;
+    /* Scrollbar mỏng cho Chrome/Safari */
+}
+
+.checkout-tab::-webkit-scrollbar-thumb {
+    background: var(--eye-ball);
+    /* Màu scrollbar theo theme */
+    border-radius: 1rem;
+}
+
+.checkout-tab::-webkit-scrollbar-thumb:hover {
+    background: var(--lead);
+    /* Hover đậm hơn */
+}
+
+.checkout-tab-active {
+    right: 0;
+    z-index: 103 !important;
+}
+
+/* Slide vào khi JS add class */
+
+.checkout-tab h3 {
+    margin: 0 0 1rem 0;
+    /* Chỉ margin dưới */
+    text-align: center;
+    color: var(--lead);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    /* Không co lại khi scroll */
+}
+
+.checkout-header {
+    display: flex;
+    flex-direction: column;
+    /* Tổng thể vertical stack: top row → button → p */
+    align-items: center;
+    /* Center tất cả nội dung */
+    gap: 0.5rem;
+    /* Khoảng cách giữa các phần */
+    padding: 1rem;
+    /* Padding tổng cho header */
+}
+
+.header-top {
+    display: flex;
+    /* ← Flex row cho icon + address ngang hàng */
+    align-items: center;
+    /* Center vertical trong row */
+    justify-content: center;
+    /* Center horizontal tổng row */
+    gap: 0.5rem;
+    /* Khoảng cách giữa icon và text */
+    width: 100%;
+    /* Full width để center tốt */
+    flex-wrap: wrap;
+    /* Wrap nếu mobile hẹp (icon trên, text dưới) */
+}
+
+.header-top i {
+    /* Icon style tinh chỉnh */
+    font-size: 2rem;
+    color: var(--gold-finger);
+    flex-shrink: 0;
+    /* Không co icon */
+}
+
+#address-display {
+    text-align: left;
+    /* Text align left trong div (ngang icon) */
+    color: var(--lead);
+    font-weight: 500;
+    font-size: 1rem;
+    flex: 1;
+    /* Chiếm hết space còn lại */
+    min-width: 0;
+    /* Cho phép wrap text nếu dài */
+    word-break: break-word;
+    /* Break word nếu text dài */
+}
+
+
+/* Icon trong header (sử dụng inline style từ HTML, thêm CSS nếu cần) */
+.checkout-header i {
+    display: block;
+    /* Block để căn giữa */
+    margin-bottom: 0.5rem;
+    /* Khoảng cách dưới icon */
+}
+
+/* P trong header (sử dụng inline style, thêm CSS cho consistency) */
+.checkout-header p {
+    margin: 0;
+    color: gray;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* Div danh sách mua hàng (scrollable - thiết kế như card-list cart) */
+.checkout-items-list {
+    flex: 1;
+    /* Chiếm space giữa (sau header, trước total) */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* Gap nhỏ giữa items */
+    overflow-y: auto;
+    /* Scroll nếu nhiều item */
+    max-height: 70vh;
+    /* TĂNG LÊN 70vh (khoảng 500-700px tùy màn hình) để chứa ít nhất 5-7 items, thấy rõ 3+ items mà không scroll nội bộ */
+    min-height: 300px;
+    /* Thêm: Tăng tính linh hoạt cho scroll trong list con */
+    padding-right: 0.4rem;
+    /* Space cho scrollbar */
+    margin-bottom: 1rem;
+    scrollbar-width: thin;
+    /* Scrollbar mỏng cho list con */
+    scrollbar-color: var(--eye-ball) transparent;
+}
+
+.checkout-items-list::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.checkout-items-list::-webkit-scrollbar-thumb {
+    background: var(--gold-finger);
+    /* Màu scrollbar theo theme */
+    border-radius: 1rem;
+    min-height: 50px;
+    /* Force thumb dài hơn để dễ drag nếu scroll */
+
+}
+
+.checkout-items-list::-webkit-scrollbar-thumb:hover {
+    background: var(--lead);
+    /* Hover đậm hơn */
+}
+
+.checkout-items-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    /* Track nhẹ để phân biệt */
+    border-radius: 1rem;
+}
+
+
+/* Item trong danh sách (thiết kế như .item cart, nhưng read-only, không quantity) */
+.checkout-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    /* Nền xám nhạt */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 2px 4px;
+    /* Bóng nhẹ */
+    transition: background 0.3s ease, transform 0.2s ease;
+    /* Hover mượt */
+}
+
+.checkout-item:hover {
+    background: #e0f9f9;
+    /* Hover sáng hơn */
+    transform: translateX(2px);
+    /* Di chuyển nhẹ phải */
+}
+
+.checkout-item .item-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    /* Giữ tỷ lệ hình */
+    border-radius: 0.5rem;
+}
+
+.checkout-item .detail {
+    flex: 2;
+    /* Chiếm space chính cho text */
+}
+
+.checkout-item h4 {
+    font-size: 1.2rem;
+    color: var(--lead);
+    margin: 0;
+    line-height: 1.3;
+    /* Dễ đọc */
+}
+
+.checkout-item .item-price {
+    font-weight: bold;
+    color: var(--gold-finger);
+    /* Màu giá theo theme */
+    margin: 0.2rem 0 0 0;
+    font-size: 1rem;
+}
+
+/* Quantity controls in checkout (giống cart-tab) */
+.checkout-item {
+    display: flex;
+    /* Flex để chứa image + detail + quantity */
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 2px 4px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    position: relative;
+    /* Để slide-out mượt */
+}
+
+.checkout-item .detail {
+    flex: 1;
+    /* Chiếm space chính, thay vì flex:2 để fit quantity */
+}
+
+.checkout-item .flex {
+    /* Container cho quantity buttons */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
+    /* Đẩy quantity sang phải */
+}
+
+.checkout-item .quantity-btn {
+    /* Giống cart: Nút + / - */
+    background: var(--lead);
+    color: var(--pure-white);
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.checkout-item .quantity-btn:hover {
+    background: var(--gold-finger);
+}
+
+.checkout-item .quantity-value {
+    /* Hiển thị số lượng */
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0.5rem;
+    min-width: 1.5rem;
+    text-align: center;
+    color: var(--lead);
+}
+
+.checkout-item .item-price {
+    /* Giá hiển thị với qty */
+    font-weight: bold;
+    color: var(--gold-finger);
+    margin: 0.2rem 0 0 0;
+    font-size: 1rem;
+}
+
+/* Animation slide-out khi remove (giống cart) */
+.checkout-item.slide-out {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover cho toàn item */
+.checkout-item:hover {
+    background: #e0f9f9;
+    transform: translateX(2px);
+}
+
+
+
+/* Div tổng số tiền (thiết kế nổi bật, căn phải) */
+.checkout-total {
+    background: #f0f8ff;
+    /* Nền xanh nhạt */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    /* Không co */
+    text-align: right;
+    /* Căn phải cho total */
+}
+
+.checkout-total h4 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: var(--lead);
+    display: flex;
+    justify-content: space-between;
+    /* Span total-amount/shipping-fee căn phải */
+}
+
+.grand-total {
+    font-size: 1.3rem;
+    color: var(--gold-finger);
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Div phương thức thanh toán (thiết kế radio đẹp, hover) */
+.payment-methods {
+    flex-shrink: 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    /* Nền xám nhạt */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.payment-methods h4 {
+    margin: 0 0 1rem 0;
+    color: var(--lead);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.payment-option {
+    display: block;
+    /* Mỗi label block để stack dọc */
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background: var(--pure-white);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Hover mượt */
+    display: flex;
+    align-items: center;
+}
+
+.payment-option:hover {
+    background: #e0f9f9;
+    /* Hover sáng */
+    border-color: var(--gold-finger);
+    transform: translateX(2px);
+    /* Di chuyển nhẹ */
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: var(--gold-finger);
+    /* Màu radio checked theo theme */
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/* Nút thanh toán (thiết kế như btn theme, flex chia đều) */
+.checkout-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    /* Đường viền trên */
+}
+
+.close-checkout {
+    background: var(--lead) !important;
+    /* Nền xám như close-btn cart */
+    flex: 1;
+    max-width: 150px;
+    text-align: center;
+}
+
+.close-checkout:hover {
+    background: var(--gold-finger) !important;
+    color: var(--lead) !important;
+    transform: scale(1.05);
+    /* Phóng to nhẹ */
+}
+
+#payBill {
+    background: var(--gold-finger) !important;
+    /* Nền cam nổi bật */
+    flex: 1;
+    max-width: 200px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#payBill:hover {
+    background: var(--lead) !important;
+    transform: scale(1.05);
+    /* Phóng to khi hover */
+}
+
+/* Comments Section */
+#comments-section {
+    background-color: var(--eye-ball);
+    padding: 4rem 0;
+}
+
+.comment-form-container {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.comment-form .form-group {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.comment-form textarea {
+    resize: vertical;
+}
+
+.comments-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comment-item {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.comment-header {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.comment-header small {
+    color: #666;
+}
+
+.no-comments {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}
+
+/* Empty message (nếu .checkout-items-list rỗng, JS sẽ không render) */
+.checkout-items-list:empty::before {
+    content: "Giỏ hàng trống. Hãy thêm sản phẩm trước khi thanh toán!";
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    color: gray;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Overlay active khi checkout mở (z-index cao hơn cart) */
+body:has(.checkout-tab-active) .cart-overlay {
+    z-index: 102 !important;
+    /* Che cart nếu mở cùng lúc */
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    cursor: pointer;
+}
+
+.close-btn {
+    background: var(--lead) !important;
+    flex: 0.5;
+    max-width: 150px;
+    text-align: center;
+}
+
+.close-btn:hover {
+    background: var(--gold-finger) !important;
+    color: var(--lead) !important;
+}
+
+/* Total container ngoài cart (nếu cần, giữ như old) */
+.total-container {
+    width: 100%;
+    background: var(--gold-finger);
+    text-align: center;
+    margin-block: 1rem;
+    padding-block: 1rem;
+}
+
+.total-container h4 {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.btn-container .btn {
+    background: var(--lead);
+    transition: .3s ease-in-out;
+}
+
+.btn-container .btn:hover {
+    background: #edf0c9;
+    color: var(--lead);
+}
+
+/* Item ngoài cart (nếu dùng, giữ như old) */
+.item {
+    display: flex;
+    align-items: center;
+    padding: .7rem 0.4rem;
+}
+
+.cart-list .item:nth-child(even) {
+    background: rgb(212, 233, 234);
+}
+
+.item .item-image img {
+    width: 5rem;
+}
+
+.item h4 {
+    font-size: 1.3rem;
+    color: var(--lead);
+}
+
+.item .item-total {
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.quantity-btn {
+    background: var(--lead);
+    color: var(--pure-white);
+    width: 1.7rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 1.7rem;
+    cursor: pointer;
+}
+
+.quantity-value {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-inline: .6rem;
+}
+
+.review-container {
+    width: 650px;
+    max-width: 100%;
+    flex: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.profile {
+    width: 9rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.mt-half .fa-stars {
+    color: gold;
+}
+
+.mt-one-half {
+    margin-top: 2rem;
+}
+
+.mt-one-half-two {
+    margin-top: 3.2rem;
+}
+
+.arrow {
+    width: 3.5rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    background: var(--gold-finger);
+    color: var(--lead);
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+.app-container {
+    background: rgba(76, 170, 185, 0.423);
+    padding: 3rem 2rem;
+    border-radius: 3rem;
+}
+
+.app-container img {
+    width: 40rem;
+    max-width: 100%;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0 10px 10px);
+}
+
+.app-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container .content h2 {
+    font-size: 3.5rem;
+}
+
+.input-container {
+    width: 43rem;
+    max-width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 4rem auto 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 30px 50px;
+}
+
+input[type="email"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: var(--lead);
+}
+
+input[type="email"]:focus {
+    outline: none;
+}
+
+input[type="tel"] {
+    -webkit-appearance: none;
+}
+
+.footer-container {
+    margin-top: 4rem;
+    padding-block: 8rem;
+    background: var(--gold-finger);
+}
+
+.footer-container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-container h3,
+.footer-container h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.footer-container .flex {
+    align-items: flex-start;
+}
+
+.footer-wrapper {
+    flex: 1;
+    flex-basis: 150px;
+}
+
+.footer-wrapper:nth-child(1) {
+    flex: 2;
+    flex-basis: 300px;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: var(--lead);
+}
+
+.footer-wrapper .social-icon {
+    background: var(--pure-white);
+}
+
+.footer-wrapper .social-icon:hover {
+    background: var(--lead);
+    color: var(--pure-white);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* Captcha Styles */
+.captcha-group {
+    position: relative;
+}
+
+.captcha-question {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--lead);
+    letter-spacing: 2px;
+}
+
+#captchaAnswer {
+    font-size: 16px;
+}
+
+.captcha-note {
+    color: #888;
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    animation: fadeInBackdrop 0.3s ease;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 450px;
+    max-height: 90vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 10px 30px rgba(243, 79, 14, 0.1);
+    overflow: hidden;
+    animation: modalSlideIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.modal.active .modal-content {
+    animation: none;
+}
+
+.form-scroll {
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 6px;
+    margin-top: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.form-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.form-scroll::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 3px;
+}
+
+.form-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.modal-header {
+    text-align: center;
+    padding: 30px 24px 20px;
+    background: linear-gradient(135deg, var(--gold-finger) 0%, #e8450e 100%);
+    color: white;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-header::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+#modalTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+    background: linear-gradient(135deg, white 0%, #f0f8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tab-buttons {
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tab-btn:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gold-finger);
+}
+
+.close {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.close:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.tab-content {
+    display: none;
+    padding: 24px;
+    overflow-y: auto;
+    height: calc(100% - 120px);
+    scrollbar-width: thin;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content::-webkit-scrollbar {
+    width: 4px;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+    background: rgba(243, 79, 14, 0.3);
+    border-radius: 2px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--lead);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 16px 16px 16px 50px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    color: var(--lead);
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+    opacity: 0.7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--gold-finger);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(243, 79, 14, 0.1);
+    transform: translateY(-1px);
+}
+
+.form-group:has(#signupName),
+.form-group:has(#loginPhone) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23383933'%3E%3Cpath d='M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    background-size: 20px;
+}
+
+.form-group:has(input[type="password"]) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23383933'%3E%3Cpath d='M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    background-size: 20px;
+}
+
+.btn.full-width {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--gold-finger) 0%, var(--lead) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(243, 79, 14, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn.full-width::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn.full-width:hover::before {
+    left: 100%;
+}
+
+.btn.full-width:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(243, 79, 14, 0.4);
+    background: linear-gradient(135deg, var(--lead) 0%, var(--gold-finger) 100%);
+}
+
+.forgot-password,
+.terms {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+.forgot-password a,
+.terms a {
+    color: var(--gold-finger);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.forgot-password a::after,
+.terms a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold-finger);
+    transition: width 0.3s ease;
+}
+
+.forgot-password a:hover::after,
+.terms a:hover::after {
+    width: 100%;
+}
+
+.forgot-password a:hover,
+.terms a:hover {
+    color: var(--lead);
+}
+
+/* Info Card cho Contact Section */
+.info-card {
+    flex: 1;
+    padding: 2rem;
+    background: var(--pure-white);
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px;
+    transition: transform 0.3s ease;
+    min-width: 200px;
+}
+
+.info-card i {
+    font-size: 3rem;
+    color: var(--gold-finger);
+    margin-bottom: 1rem;
+}
+
+.info-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.info-card p {
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact-section {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+.contact-form-container .auth-form {
+    background: var(--pure-white);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 30px;
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+/* Chat Styles */
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--gold-finger), var(--lead));
+    border: none;
+    border-radius: 50%;
+    color: var(--pure-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(243, 79, 14, 0.3);
+    transition: all 0.3s ease;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(243, 79, 14, 0.4);
+}
+
+.chat-toggle .chat-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ff0000;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 400px;
+    background: var(--pure-white);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 200;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.chat-window.chat-active {
+    transform: translateX(0);
+}
+
+.chat-header {
+    background: linear-gradient(135deg, var(--gold-finger), var(--lead));
+    color: var(--pure-white);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.chat-close {
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.chat-close:hover {
+    color: #ffeb3b;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    scrollbar-width: thin;
+}
+
+.chat-messages::-webkit-scrollbar {
+    width: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: var(--gold-finger);
+    border-radius: 2px;
+}
+
+.message {
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.bot {
+    background: var(--gold-finger);
+    color: var(--pure-white);
+    margin-left: auto;
+    text-align: right;
+}
+
+.message.user {
+    background: var(--lead);
+    color: var(--pure-white);
+    margin-right: auto;
+}
+
+.chat-input {
+    display: flex;
+    padding: 16px;
+    background: var(--pure-white);
+    border-top: 1px solid #e0e0e0;
+    gap: 8px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input input:focus {
+    border-color: var(--gold-finger);
+    box-shadow: 0 0 0 2px rgba(243, 79, 14, 0.1);
+}
+
+.chat-input button {
+    width: 40px;
+    height: 40px;
+    background: var(--gold-finger);
+    color: var(--pure-white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Checkout Form Scroll View */
+.checkout-form {
+    max-height: 500px;
+    /* Giới hạn chiều cao để scroll */
+    overflow-y: auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.checkout-form h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.checkout-form .order-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkout-form .order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.checkout-form .order-item .details {
+    flex: 1;
+}
+
+.checkout-form .order-item .price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.checkout-form .radio-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.checkout-form .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.checkout-form input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.checkout-form .total-row {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin: 1rem 0;
+    color: #27ae60;
+}
+
+.checkout-form .address-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.checkout-form .submit-btn {
+    width: 100%;
+    background: #27ae60;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.checkout-form .submit-btn:hover {
+    background: #219a52;
+}
+
+/* Ẩn cart items khi checkout */
+.card-list.checkout-mode .item {
+    display: none;
+}
+
+
+.chat-input button:hover {
+    background: var(--lead);
+}
+
+.address-tab {
+    flex: 1;
+    /* Chiếm space cạnh icon */
+    position: relative;
+    /* Để form chồng lên (absolute) */
+    cursor: pointer;
+    /* Clickable như tab */
+    transition: all 0.3s ease;
+    /* Mượt slide/hover */
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    /* Nền nhẹ, nổi trên header */
+    margin: 0.25rem;
+}
+
+.address-tab:hover {
+    background: rgba(243, 79, 14, 0.1);
+    /* Hover gold nhẹ */
+    transform: translateY(-1px);
+    /* Nâng nhẹ như tab active */
+}
+
+.address-display {
+    text-align: left;
+    color: var(--lead);
+    font-weight: 500;
+    font-size: 1rem;
+    min-width: 0;
+    word-break: break-word;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    /* Clickable pointer */
+
+}
+
+.address-display.warning {
+    color: red !important;
+    /* Warning style từ JS */
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid red;
+    border-radius: 0.25rem;
+}
+
+.address-display:hover {
+    background: rgba(243, 79, 14, 0.05);
+    /* Hover highlight */
+}
+
+/* Inline Edit Form (Chồng Lên - Slide Up) */
+.address-edit-form {
+    position: absolute;
+    /* Chồng lên tab (absolute trong relative .address-tab) */
+    bottom: 100%;
+    /* Slide-up từ dưới tab (chồng lên header) */
+    left: 0;
+    right: 0;
+    background: var(--pure-white);
+    border: 1px solid #ddd;
+    border-radius: 0.5rem 0.5rem 0 0;
+    /* Bo góc trên (chồng lên) */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    /* Bóng dưới để nổi chồng */
+    padding: 1rem;
+    z-index: 10;
+    /* Nổi trên tab */
+    transform: translateY(100%);
+    /* Ẩn dưới ban đầu (translateY full height) */
+    transition: transform 0.3s ease;
+    /* Slide-up mượt */
+    max-width: 300px;
+    /* Giới hạn width để fit header */
+    min-height: 120px;
+    /* Min height cho textarea */
+    display: none;
+    /* Ẩn ban đầu từ HTML */
+
+}
+
+.address-tab.active .address-edit-form {
+    display: block;
+    /* Hiện form khi active */
+
+    transform: translateY(0);
+    /* Slide-up chồng lên khi active */
+}
+
+#addressInput {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    resize: none;
+    /* Không resize textarea (fixed height) */
+    min-height: 60px;
+    /* Height nhỏ cho inline tab */
+    font-family: inherit;
+}
+
+#addressInput:focus {
+    outline: none;
+    border-color: var(--gold-finger);
+    box-shadow: 0 0 0 2px rgba(243, 79, 14, 0.1);
+}
+
+.edit-buttons {
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.edit-buttons .small-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    flex: 1;
+    max-width: 100px;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-buttons .small-btn.secondary {
+    background: #ccc;
+    /* Hủy xám */
+    color: #666;
+}
+
+.edit-buttons .small-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-buttons #saveAddressBtn {
+    background: var(--gold-finger);
+    color: var(--pure-white);
+}
+
+.edit-buttons #saveAddressBtn:hover {
+    background: var(--lead);
+}
+
+.edit-buttons #cancelAddressEdit {
+    background: #ddd;
+    color: var(--lead);
+}
+
+.edit-buttons #cancelAddressEdit:hover {
+    background: #ccc;
+}
+
+
+/* Animation keyframes */
+@keyframes fadeInBackdrop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Thêm vào cuối file style.css - CSS cho floating-tracking-icon */
+.floating-tracking-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--gold-finger, #ffd700);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.floating-tracking-icon:hover {
+    transform: scale(1.1);
+}
+
+.floating-tracking-icon a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.floating-tracking-icon i {
+    color: #333;
+}
+
+.tracking-form-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+.tracking-result {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+.order-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+}
+.status-bar .status.completed {
+    color: green;
+    font-weight: bold;
+}
+.status-bar .status.pending {
+    color: orange;
+}
+
+
+/* Mobile Responsive (merge all, uniform .cart-list như old) */
+@media (max-width: 750px) {
+    .address-tab {
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+    .address-edit-form {
+        max-width: none;
+        /* Full width mobile */
+        left: -1rem;
+        /* Mở rộng ngoài tab */
+        right: -1rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding: 0.8rem;
+        min-height: 100px;
+        /* Tăng height cho dễ nhập mobile */
+    }
+
+    #addressInput {
+        min-height: 80px;
+        /* Height lớn hơn cho touch */
+    }
+
+    .edit-buttons .small-btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Header row column trên mobile */
+    .header-top {
+        flex-direction: column;
+        gap: 0.25rem;
+        text-align: center;
+    }
+
+
+    body:has(.checkout-tab-active) .cart-overlay {
+        z-index: 102 !important;
+        /* Vẫn che cart nếu cart mở trên mobile */
+        pointer-events: none;
+        /* Tắt click, phù hợp full-screen checkout */
+    }
+
+    .checkout-tab-active {
+        z-index: 103 !important;
+        /* Nổi trên overlay */
+    }
+
+    /* Nếu cart mở trên mobile + checkout: Ẩn cart hoàn toàn để tránh overlap */
+    body:has(.checkout-tab-active) .cart-tab {
+        display: none !important;
+        /* Tùy chọn: Ẩn cart thay vì chỉ mờ (tiết kiệm space mobile) */
+    }
+
+    /* .cart-list uniform mobile: Giảm size nhưng giữ layout old */
+    .cart-list {
+        gap: 1.5rem;
+        /* Giảm gap như old mobile */
+        padding-inline: 1rem;
+        /* Padding edge */
+    }
+
+    .list {
+        flex: 0 0 280px;
+        /* Width nhỏ hơn như old */
+        min-height: 380px;
+        /* Height nhỏ hơn, vẫn đều */
+        padding: 1rem;
+    }
+
+    .list .image-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .list h4 {
+        font-size: 1.3rem;
+    }
+
+    .list .price {
+        font-size: 1.5rem;
+    }
+
+    .list .btn {
+        padding: 0.7rem 1.2rem;
+        max-width: 180px;
+        font-size: 1rem;
+    }
+
+    /* Chat Responsive */
+    .chat-toggle {
+        bottom: 15px;
+        right: 15px;
+        width: 55px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+
+    .chat-window {
+        width: calc(100% - 30px);
+        right: 15px;
+        bottom: 70px;
+        height: calc(100vh - 100px);
+        border-radius: 12px;
+        transform: translateX(100%);
+    }
+
+    .chat-window.chat-active {
+        transform: translateX(0);
+    }
+
+    body.chat-open {
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+    /* Modal Responsive */
+    .modal-content {
+        width: 92%;
+        max-height: 80vh;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
+
+    .modal-header {
+        padding: 24px 20px 16px;
+    }
+
+    .tab-content {
+        padding: 20px;
+        height: calc(100% - 100px);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 18px 16px 18px 50px;
+        font-size: 16px;
+    }
+
+    .btn.full-width {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    #modalTitle {
+        font-size: 1.6rem;
+    }
+
+    .tab-btn {
+        padding: 14px 12px;
+        font-size: 15px;
+    }
+
+    .close {
+        top: 16px;
+        right: 16px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    /* Mobile Responsive (full width, giảm size cho tab) */
+    .checkout-tab {
+        width: 100%;
+        /* Full màn hình mobile */
+        right: -100%;
+        /* Ẩn full */
+        padding: 1.5rem 1rem;
+        /* Padding nhỏ hơn */
+        max-height: 100vh;
+        /* Giữ full height */
+        overflow-y: auto;
+        /* Scroll toàn tab mobile */
+    }
+
+    .checkout-tab-active {
+        right: 0;
+        z-index: 103 !important;
+    }
+
+    /* Giảm height scroll list mobile */
+    .checkout-items-list {
+        max-height: 60vh;
+        /* 60vh ~300-400px trên mobile, đủ 3-5 items */
+        min-height: 250px;
+        /* Ít nhất 250px cho 3 items trên mobile */
+    }
+
+    .checkout-items-list::-webkit-scrollbar {
+        width: 0.3rem;
+    }
+
+    .checkout-items-list::-webkit-scrollbar-thumb {
+        border-radius: 0.5rem;
+        min-height: 40px;
+        /* Dễ drag trên touch */
+    }
+
+    /* Optional: Giảm padding items trên mobile để fit nhiều hơn */
+    .checkout-item {
+        padding: 0.8rem;
+        /* Giảm từ 1rem để items nhỏ hơn */
+        gap: 0.8rem;
+    }
+
+    .checkout-item .quantity-btn {
+        width: 1.8rem;
+        height: 1.8rem;
+        line-height: 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    .checkout-item .quantity-value {
+        font-size: 1.1rem;
+        margin: 0 0.3rem;
+    }
+
+    .checkout-item h4 {
+        font-size: 1.1rem;
+        /* Font nhỏ hơn trên mobile */
+    }
+
+    /* Padding nhỏ hơn cho total/methods */
+    .checkout-total,
+    .payment-methods {
+        padding: 0.8rem;
+    }
+
+    /* Buttons gap nhỏ, full flex */
+    .checkout-buttons {
+        gap: 0.5rem;
+        padding-top: 0.8rem;
+    }
+
+    .close-checkout,
+    #payBill {
+        max-width: none;
+        /* Full width mobile */
+        flex: 1;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* Header icon nhỏ hơn */
+    .checkout-header i {
+        font-size: 1.5rem;
+    }
+
+    /* Payment option stack chặt hơn */
+    .payment-option {
+        padding: 0.6rem;
+        margin: 0.3rem 0;
+    }
+
+    .checkout-tab::-webkit-scrollbar {
+        width: 0.3rem;
+    }
+
+    .checkout-tab::-webkit-scrollbar-thumb {
+        background: var(--gold-finger);
+        border-radius: 0.5rem;
+    }
+
+    /* Navbar Mobile */
+    .navlist,
+    .desktop-action .btn {
+        display: none;
+    }
+
+    .desktop-action .hamburger {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 20%;
+        left: -100%;
+        transform: translateX(-50%);
+        width: 20rem;
+        padding: 2rem;
+        background: var(--pure-white);
+        border: .2rem solid var(--gold-finger);
+        border-radius: 3rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px, rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+        transition: all .5s ease-in-out;
+    }
+
+    .mobile-menu-active {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* General Mobile */
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    .content {
+        padding-top: 2rem;
+    }
+
+    .pad {
+        padding-top: 2rem;
+    }
+
+    .gap-2 {
+        gap: 1.4rem;
+    }
+
+    .gap-4 {
+        gap: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .app-container {
+        flex-direction: column;
+    }
+
+    .app-container .content h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Cart-tab mobile */
+    body.cart-open {
+        margin-right: 0;
+        overflow-x: hidden;
+    }
+
+    .cart-tab {
+        width: 100%;
+        right: -100%;
+    }
+
+    .cart-tab-active {
+        right: 0;
+    }
+
+    /* Contact Mobile */
+    .contact-section {
+        padding-top: 10rem;
+        text-align: center;
+    }
+
+    .contact-form-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-inline: 1rem;
+    }
+
+    .contact-info {
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .info-card i {
+        font-size: 2.5rem;
+    }
+
+    /* Scrollbar Mobile */
+    .cart-tab .card-list::-webkit-scrollbar {
+        width: 0.3rem;
+    }
+
+    .cart-tab .card-list::-webkit-scrollbar-thumb {
+        background: var(--gold-finger);
+        border-radius: 0.5rem;
+    }
+
+    .cart-overlay.active {
+        cursor: pointer;
+    }
+
+    /* No shift on mobile cart */
+    body:has(.cart-tab.cart-tab-active) {
+        margin-right: 0;
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+
+}
+
+/* Desktop Media Query */
+@media (min-width: 751px) {
+    .modal-content {
+        position: fixed;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+        z-index: 9999;
+    }
+
+    /* Nếu cần shift .cart-list khi cart mở trên desktop (tùy chọn, thêm nếu muốn) */
+    body.cart-open .cart-list {
+        margin-right: 25rem;
+        transition: margin-right 0.3s ease;
+    }
+
+    body.cart-open.chat-open {
+        margin-right: 25rem;
+        padding-right: 370px;
+    }
+}

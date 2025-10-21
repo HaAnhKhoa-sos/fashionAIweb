@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Giày Thời Trang Panda",
+        "price": "100.000 VND",
+        "image": "list/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Giày Thời Trang Badika",
+        "price": "130.000 VND",
+        "image": "list/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Giày Thiết Kế Vetements",
+        "price": "450.000 VND",
+        "image": "list/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Giày Thời Trang Daicu",
+        "price": "200.000 VND",
+        "image": "list/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Giày Kiểu Mẫu Đen",
+        "price": "350.000 VND",
+        "image": "list/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Giày Kiểu Mẫu Trắng",
+        "price": "350.000 VND",
+        "image": "list/6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Giày Thời Trang Sóng Biển",
+        "price": "250.000 VND",
+        "image": "list/7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Giày Off Style Nâu Trắng",
+        "price": "280.000 VND",
+        "image": "list/8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Giày Look For The Star Xám",
+        "price": "320.000 VND",
+        "image": "list/9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Giày Look For The Star Xanh Rêu",
+        "price": "320.000 VND",
+        "image": "list/10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Giày GX Đen Trắng",
+        "price": "370.000 VND",
+        "image": "list/11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Giày PaulAuratm LED Xanh",
+        "price": "400.000 VND",
+        "image": "list/12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Giày Anime Sóng Biển Xanh",
+        "price": "260.000 VND",
+        "image": "list/13.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Giày Anime Màu Xanh Đen",
+        "price": "260.000 VND",
+        "image": "list/14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Giày Nỉ Ấm SUQU Trắng Nâu",
+        "price": "300.000 VND",
+        "image": "list/15.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Giày Nỉ Ấm SUQU Đen Trắng",
+        "price": "300.000 VND",
+        "image": "list/16.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Giày Cao Cổ Nữ Thời Trang Gấu Bông",
+        "price": "380.000 VND",
+        "image": "list/17.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Giày Thời Trang Nữ Cổ Thấp Sọc Vàng",
+        "price": "320.000 VND",
+        "image": "list/18.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Giày Thời Trang Nữ Cổ Thấp Đen Trắng",
+        "price": "320.000 VND",
+        "image": "list/19.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Giày Thời Trang Nam Nữ Cổ Cao Xám",
+        "price": "290.000 VND",
+        "image": "list/20.jpg"
+    }
+]
